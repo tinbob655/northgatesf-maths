@@ -3,6 +3,10 @@ import {Routes, Route} from 'react-router-dom';
 
 //import all pages
 import Home from './components/pages/home/home';
+import PastPapers from './components/pages/pastPapers/pastPapers';
+import CambridgeGo from './components/pages/cambridgeGo/cambridgeGo';
+import Workshop from './components/pages/workshop/workshop';
+import RevisionTimetables from './components/pages/revisionTimetables/revisionTimetables';
 
 export default function AllRoutes():React.ReactElement {
 
@@ -12,6 +16,10 @@ export default function AllRoutes():React.ReactElement {
         //map of all pages
         const pages:any = {
             ['']: <Home />,
+            pastPapers: <PastPapers />,
+            cambridgeGo: <CambridgeGo />,
+            workshop: <Workshop />,
+            revisionTimetables: <RevisionTimetables />,
         };
 
         Object.keys(pages).forEach((page) => {

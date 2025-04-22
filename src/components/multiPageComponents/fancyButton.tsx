@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 interface props {
-    backgroundColor: string,
+    backgroundColor?: string,
     onClick?: () => void,
     destination?: string,
     buttonText: string,
-    state: any,
+    state?: any,
 }
 
 export default function FancyButton({backgroundColor, onClick, destination, buttonText, state}:props):React.ReactElement {
