@@ -1,5 +1,4 @@
 import React from 'react';
-import DividerLine from './dividerLine';
 import headerImage from '../../assets/images/northgateImageNoBackground.png';
 
 interface props {
@@ -29,7 +28,8 @@ export default function PageHeader({heading, subheading}:props):React.ReactEleme
                     </tr>
                 </thead>
             </table>
-            <DividerLine/>
+            
+            <div style={{width: '75%', height: '5px', backgroundColor: 'white'}}></div>
         </React.Fragment>
     );
 };
