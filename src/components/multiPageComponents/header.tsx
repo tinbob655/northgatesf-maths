@@ -19,12 +19,10 @@ export default function Header():React.ReactElement {
         let headerHTML:[React.ReactElement] = [<></>];
         const allHeaders:Array<Array<string>> = [
             ['Home', ''],
-            ['How to revise', 'howToRevise'],
-            ['Papers', 'papers'],
-            ['Skills Checks', 'skillsChecks'],
-            ['Topic Practice', 'topicPractice'],
-            ['Support', 'support'],
-            ['Sixth Form', 'sixthForm'],
+            ['Past Papers', 'pastPapers'],
+            ['Maths Workshop', 'workshop'],
+            ['Revision Timetables', 'revisionTimetables'],
+            ['Cambridge Go', 'cambridgeGo'],
         ];
         allHeaders.forEach((header) => {
             headerHTML.push(
