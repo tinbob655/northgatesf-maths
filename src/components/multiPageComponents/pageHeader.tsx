@@ -1,5 +1,6 @@
 import React from 'react';
 import DividerLine from './dividerLine';
+import headerImage from '../../assets/images/northgateImageNoBackground.png';
 
 interface props {
     heading: string,
@@ -23,7 +24,7 @@ export default function PageHeader({heading, subheading}:props):React.ReactEleme
                             </p>
                         </td>
                         <td>
-                            <img className="noVerticalSpacing" style={{height: '180px', float: 'right', marginRight: '10%'}} src={'/northgateImageNoBackground.png'} alt="The Northgate High School logo" />
+                            <img className="noVerticalSpacing" style={{height: '180px', float: 'right', marginRight: '10%'}} src={headerImage} alt="The Northgate High School logo" />
                         </td>
                     </tr>
                 </thead>
