@@ -8,6 +8,7 @@ import CambridgeGo from './components/pages/cambridgeGo/cambridgeGo';
 import Workshop from './components/pages/workshop/workshop';
 import RevisionTimetables from './components/pages/revisionTimetables/revisionTimetables';
 import PastPaperTable from './components/pages/pastPapers/pastPaperTable';
+import Admin from './components/pages/admin/admin';
 
 export default function AllRoutes():React.ReactElement {
 
@@ -22,6 +23,7 @@ export default function AllRoutes():React.ReactElement {
             workshop: <Workshop />,
             revisionTimetables: <RevisionTimetables />,
             pastPaperTable: <PastPaperTable />,
+            admin: <Admin />,
         };
 
         Object.keys(pages).forEach((page) => {

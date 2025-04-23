@@ -97,7 +97,6 @@ button {
     background-color: transparent;
     margin: 0;
     padding: 0;
-    width: min-content;
 }
 
 a {
@@ -177,6 +176,12 @@ table {
     margin-right: auto;
 }
 
+label {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 15px;
+}
+
 td {
 
     &.headerCell {
@@ -209,11 +214,14 @@ input {
     margin-right: auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    min-width: 100px;
 
     transition-property: background-color, transform;
     transition-duration: 0.75s;
     transition-timing-function: ease;
+
+    &.radio {
+        display: unset;
+    }
 
     &:focus {
         background-color: #adc3cc;
